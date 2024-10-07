@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+:root {
+    --cor0: white;
+    --cor1: #FFB7EF;
+    --cor2: #94BDF2;
+    --cor3: #5C9DF2;
+    --cor4: #1E6FD9;
+    --cor5: #0D65D9;
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: "Playball", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font1);
+    box-sizing: border-box;
+    color: var(--cor0);
+    font-size: 19px;
+}
+
+body,
+html {
+    background: magenta url(../../imagem/dgdd80h-c9ed117a-815e-4f0d-9758-b176d26c2462.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login {
+    background-color: #5c9df298;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+
+}
+
+section#login>div#imagem {
+    display: block;
+    background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.avif);
+    height: 200px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  ao invés de colocar isso, eu posso só colocar overflow hidden, pra tudo que tiver fora dessa div ser cortada*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#login>div#form {
+    display: block;
+    padding: 10px;
+
+}
+
+div#form>h1 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+
+}
