@@ -31,6 +31,31 @@ html {
     width: 100vw;
 }
 
+div#redes > h1{margin-bottom: 10px; font-size: 1.5em;
+
+}
+div#redes {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+ div#redes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+div#redes img:hover {
+    transform: translate(-4px, -4px);
+    border: 2px solid var(--cor5);
+    box-shadow: 2px 2px 7px black;
+    transition: 0.5s; 
+
+}
+
 main {
     width: 100vw;
     height: 100vh;
@@ -48,12 +73,14 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 
 }
 
 section#login>div#imagem {
     display: block;
-    background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.avif);
+    background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.jpg);
     height: 200px;
     /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;  ao invés de colocar isso, eu posso só colocar overflow hidden, pra tudo que tiver fora dessa div ser cortada*/
