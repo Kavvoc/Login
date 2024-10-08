@@ -18,8 +18,8 @@
     padding: 0px;
     font-family: var(--font1);
     box-sizing: border-box;
-    color: var(--cor0);
-    font-size: 19px;
+    /* font-size: 0.95em; */
+    /* quase deu merda pq eu usei "px" ao invés de "em" */
 }
 
 body,
@@ -31,16 +31,20 @@ html {
     width: 100vw;
 }
 
-div#redes > h1{margin-bottom: 10px; font-size: 1.5em;
+div#redes>h1 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
 
 }
+
 div#redes {
     text-align: center;
     padding-top: 30px;
+    
 
 }
 
- div#redes img {
+div#redes img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -52,7 +56,7 @@ div#redes img:hover {
     transform: translate(-4px, -4px);
     border: 2px solid var(--cor5);
     box-shadow: 2px 2px 7px black;
-    transition: 0.5s; 
+    transition: 0.5s;
 
 }
 
@@ -69,12 +73,15 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
-    height: 500px;
+    height: 515px;
+    /* tive que aumentar o tamanho pra caber */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+
+    /* como eu adicionei o ngc das redes sociais em cima, eu coloquei o position relative, para o formulário não sobrepor as redes sociais */
 
 }
 
@@ -90,14 +97,70 @@ section#login>div#imagem {
 }
 
 section#login>div#form {
-    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    display: absolute;
+    /* tava absolute */
     padding: 10px;
+
 
 }
 
 div#form>h1 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin-bottom: 5px;
 
 }
+
+div#form>p {
+    font-size: 1em;
+
+}
+
+div.camp {
+    display: block;
+    height: 40px;
+    font-size: 0.5em;
+    background-color: #0000008a;
+    border-radius: 10px;
+    margin:5px 0px;
+
+
+}
+form label{display: none;
+
+}
+
+form>input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: var(--cor0);
+    background-color: #1071f0;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+form>input[type=submit]:hover {
+    background-color: black;
+    cursor: pointer;
+   }
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #5C9DF2;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+}
+
+/* div#form> p{
+
+} */

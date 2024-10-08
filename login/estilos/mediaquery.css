@@ -10,7 +10,7 @@
     --cor4: #1E6FD9;
     --cor5: #0D65D9;
     --font0: Arial, Helvetica, sans-serif;
-    --font1: "Playball", cursive;
+     --font1: "Playball", cursive; 
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
@@ -49,7 +49,7 @@
     section#login>div#imagem {
         width:50%;
         background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.jpg);
-        float: left;
+        float: right;
         height: 100%;
         background-position: top right;
 
@@ -57,7 +57,7 @@
     section#login>div#form {
        
        /* float: right; Tá usando float right, mas quando eu uso o texto buga e some. */
-       float: right;
+       float: left;
        width: 50%;
 
    }
