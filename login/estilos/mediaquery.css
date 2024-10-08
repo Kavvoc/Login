@@ -10,12 +10,15 @@
     --cor4: #1E6FD9;
     --cor5: #0D65D9;
     --font0: Arial, Helvetica, sans-serif;
-     --font1: "Playball", cursive; 
+    --font1: "Playball", cursive;
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+        
+    
     section#login {
         width: 80vw;
+        height: 400px;
 
 
 
@@ -23,43 +26,93 @@
     }
 
     section#login>div#imagem {
-        width:30%;
+        width: 30%;
         background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.jpg);
         float: left;
         height: 100%;
         background-position: top right;
         background-attachment: fixed;
-        
+
 
     }
 
     section#login>div#form {
-       float: right;
-         width: 70%; 
-
-    }
-
-
-}
-@media screen and (min-width:992px){
-    section#login{ width:940px ;
-
-    }
-    
-    section#login>div#imagem {
-        width:50%;
-        background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.jpg);
         float: right;
-        height: 100%;
-        background-position: top right;
+        width: 70%;
+        font-size: 1.5em;
+
 
     }
-    section#login>div#form {
-       
-       /* float: right; Tá usando float right, mas quando eu uso o texto buga e some. */
-       float: left;
-       width: 50%;
 
-   }
+    div.camp>input {
+        background-color: rgba(0, 0, 0, 0.349);
+        font-size: 1.4em;
+        height: 70%;
+        border-radius: 10px;
+        width: calc(100% - 45px);
+        transform: translateY(-10px);
 
+
+    }
+    div.camp>i {
+        color: white;
+         width: 35px;
+        font-size: 2.5em;
+        padding: 5px;
+        border-radius: 10px;
+        height: 100%;
+    
+    
+    
+    }
 }
+
+    @media screen and (min-width:992px) {
+        p{margin-bottom: 20px;
+
+        }
+        
+        section#login {
+            width: 940px;
+
+        }
+
+        section#login>div#imagem {
+            width: 50%;
+            background-image: url(../../imagem/beautiful-anime-sakura-landscape-cartoon-scene_23-2151035227.jpg);
+            float: right;
+            height: 100%;
+            background-position: top right;
+
+        }
+
+        section#login>div#form {
+
+            /* float: right; Tá usando float right, mas quando eu uso o texto buga e some. */
+            float: left;
+            width: 50%;
+            font-size: 1.5em;
+        }
+        div.camp>input {
+            background-color: rgba(0, 0, 0, 0.349);
+            font-size: 1.4em;
+            height: 70%;
+            border-radius: 10px;
+            width: calc(100% - 45px);
+            transform: translateY(-10px);
+    
+    
+        }
+        div.camp>i {
+            color: white;
+             width: 35px;
+            font-size: 2.5em;
+            padding: 5px;
+            border-radius: 10px;
+            height: 100%;
+        
+        
+        
+        }
+    
+    }

@@ -40,7 +40,7 @@ div#redes>h1 {
 div#redes {
     text-align: center;
     padding-top: 30px;
-    
+
 
 }
 
@@ -53,10 +53,10 @@ div#redes img {
 }
 
 div#redes img:hover {
-    transform: translate(-4px, -4px);
     border: 2px solid var(--cor5);
     box-shadow: 2px 2px 7px black;
     transition: 0.5s;
+    transform: translate(-4px, -4px);
 
 }
 
@@ -71,7 +71,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 515px;
     /* tive que aumentar o tamanho pra caber */
@@ -80,6 +79,7 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
     /* como eu adicionei o ngc das redes sociais em cima, eu coloquei o position relative, para o formulário não sobrepor as redes sociais */
 
@@ -123,11 +123,39 @@ div.camp {
     font-size: 0.5em;
     background-color: #0000008a;
     border-radius: 10px;
-    margin:5px 0px;
+    margin: 5px 0px;
+    border: 1px solid black;
 
 
 }
-form label{display: none;
+
+div.camp>i {
+    color: white;
+     width: 35px;
+    font-size: 3.5em;
+    padding: 5px;
+    border-radius: 10px;
+    height: 100%;
+
+
+
+}
+
+div.camp>input {
+    background-color: rgba(0, 0, 0, 0.349);
+    font-style: 1em;
+    height: 70%;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    transform: translateY(-9px); 
+
+}
+div.camp>input:focus-within{ background-color: white;
+
+}
+
+form label {
+    display: none;
 
 }
 
@@ -145,9 +173,9 @@ form>input[type=submit] {
 form>input[type=submit]:hover {
     background-color: black;
     cursor: pointer;
-   }
+}
 
-form > a.botao {
+form>a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
