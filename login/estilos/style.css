@@ -24,11 +24,11 @@
 /* tirei o html e deixei só o body*/
 body,html
  {
-    background: magenta url(../../imagem/dgdd80h-c9ed117a-815e-4f0d-9758-b176d26c2462.png)no-repeat center center;
+    background: url(../../imagem/dgdd80h-c9ed117a-815e-4f0d-9758-b176d26c2462.png)no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    /* tirei margin pra ver se funciona */
+    /* tirei margin pra ver se funciona, o problema é aqui, tentar aumentar a view height, o aumentar o margin bottom */
 }
 
 div#redes>h1 {
